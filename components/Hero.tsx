@@ -58,7 +58,7 @@ const Hero = () => {
           </p>
 
 
-          <a href="#projects">
+          <a href="https://drive.google.com/file/d/1wrlb8fvME2ddpZZ7TG_-cmm13sOLOP6i/view?usp=sharing">
             <MagicButton
               title="See my work"
               icon={<FaLocationArrow />}

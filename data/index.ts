@@ -241,11 +241,11 @@ export const socialMedia = [
     img: "/git.svg",
     url: "https://github.com/adysingh5711",
   },
-  // {
-  //   id: 3,
-  //   img: "/leetcode.svg",
-  //   url: "https://leetcode.com/singhaditya5711/",
-  // },
+  {
+    id: 3,
+    img: "/x.svg",
+    url: "https://x.com/singhaditya5711/",
+  },
 ];
 
 export const blogs = [

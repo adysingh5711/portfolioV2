@@ -19,7 +19,7 @@ import typescript from "/public/typescript.svg";
 import vitejs from "/public/vitejs.svg";
 import reactnative from "/public/reactnative.svg";
 import python from "/public/python.svg";
-import c from "/public/c.png";
+import c from "/public/C.png";
 import solidity from "/public/solidity.svg";
 import expressjs from "/public/expressjs.svg";
 
