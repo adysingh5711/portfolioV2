@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 256 398">
+  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+  <defs>
+    <style>
+      .st0 {
+        opacity: .8;
+      }
+
+      .st0, .st1, .st2 {
+        fill: #5d64ad;
+        isolation: isolate;
+      }
+
+      .st1 {
+        opacity: .6;
+      }
+
+      .st2 {
+        opacity: .4;
+      }
+    </style>
+  </defs>
+  <polyline class="st2" points="191.5 0 127.6 113.5 0 113.5 63.8 0 191.5 0"/>
+  <polygon class="st1" points="127.6 113.5 255.3 113.5 191.5 0 63.8 0 127.6 113.5"/>
+  <polygon class="st0" points="63.8 227 127.6 113.5 63.8 0 0 113.5 63.8 227"/>
+  <polyline class="st2" points="64.4 397.2 128.3 283.7 256 283.7 192.1 397.2 64.4 397.2"/>
+  <polygon class="st1" points="128.3 283.7 .6 283.7 64.4 397.3 192.1 397.3 128.3 283.7"/>
+  <polygon class="st0" points="192.1 170.3 128.3 283.7 192.1 397.3 256 283.7 192.1 170.3"/>
+</svg>
