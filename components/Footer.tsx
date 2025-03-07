@@ -1,10 +1,23 @@
 import { FaLocationArrow } from "react-icons/fa6";
+import { IoCopyOutline } from "react-icons/io5";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import Link from "next/link";
+import { useState } from "react";
 
 const Footer = () => {
+
+  const [copied, setCopied] = useState(false);
+
+
+  const handleCopy = () => {
+    const text = "singhaditya5711@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 3000); // Reset after 3 seconds
+  };
+
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -27,13 +40,17 @@ const Footer = () => {
         </p>
         <a href="mailto:singhaditya5711@gmail.com">
           <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
+            title={copied ? "Email is Copied!" : "Copy my email address"}
+            icon={<IoCopyOutline />}
             position="right"
+            handleClick={handleCopy}
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-center items-center">
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+        <p className="md:text-base text-sm md:font-normal font-light text-white">
+          Copyright © 2025 Aditya
+        </p>
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
             <Link

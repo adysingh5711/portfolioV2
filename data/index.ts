@@ -118,8 +118,8 @@ export const projects = [
       "/git.svg",
     ],
     hoverText: "Portfolio",
-    link: "",
-    codeLink: ""
+    link: "https://0xaditya.xyz/",
+    codeLink: "https://github.com/adysingh5711/portfolioV2"
   },
   {
     id: 4,
