@@ -1,7 +1,9 @@
 import hacktoberfest from "/public/Hacktoberfest.jpeg";
 import iiitiansnetwork from "/public/IIITiansNetwork.jpg";
 
-export const companyImage = (companyName) => {
+import { StaticImageData } from 'next/image';
+
+export const companyImage = (companyName: string | undefined): StaticImageData | undefined => {
   const companyID = companyName?.toLowerCase();
   switch (companyID) {
     case "iiitiansnetwork":
@@ -9,6 +11,6 @@ export const companyImage = (companyName) => {
     case "hacktoberfest":
       return hacktoberfest;
     default:
-      break;
+      return undefined;
   }
 };

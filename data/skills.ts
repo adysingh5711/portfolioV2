@@ -1,4 +1,4 @@
-export const skillsData = [
+const skillsData: string[] = [
   "HTML",
   "CSS",
   "Javascript",
@@ -22,3 +22,5 @@ export const skillsData = [
   "markdown",
   "Pinecone",
 ];
+
+export default skillsData;
