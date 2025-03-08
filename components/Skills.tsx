@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import { skillsData } from "@/data/skills.js";
+import skillsData from "@/data/skills";
 import { skillsImage } from "./ui/SkillsImage";
 
 const Skills = () => {
@@ -44,7 +44,7 @@ const Skills = () => {
           play={true}
           direction="left"
         >
-          {skillsData?.map((skill, id) => (
+          {skillsData.map((skill, id) => (
             <div
               className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
               key={id}
@@ -58,7 +58,7 @@ const Skills = () => {
                 <div className="flex flex-col items-center justify-center gap-3 p-6">
                   <div className="h-8 sm:h-10">
                     <Image
-                      src={skillsImage(skill)?.src}
+                      src={skillsImage(skill)?.src || "/default-image.png"}
                       alt={skill}
                       width={40}
                       height={40}
