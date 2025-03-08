@@ -24,7 +24,9 @@ import solidity from "/public/Solidity.svg";
 import expressjs from "/public/expressjs.svg";
 import pinecone from "/public/pinecone.svg";
 
-export const skillsImage = (skill) => {
+import { StaticImageData } from 'next/image';
+
+export const skillsImage = (skill: string | undefined): StaticImageData | undefined => {
   const skillID = skill?.toLowerCase();
   switch (skillID) {
     case "html":
@@ -33,51 +35,51 @@ export const skillsImage = (skill) => {
       return docker;
     case "css":
       return css;
+    case "aws":
+      return aws;
+    case "figma":
+      return figma;
+    case "firebase":
+      return firebase;
+    case "git":
+      return git;
     case "javascript":
       return javascript;
+    case "markdown":
+      return markdown;
+    case "materialui":
+      return materialui;
+    case "mongodb":
+      return mongoDB;
+    case "php":
+      return php;
+    case "mysql":
+      return mysql;
+    case "nextjs":
+      return nextJS;
+    case "openai":
+      return openai;
+    case "react":
+      return react;
+    case "tailwind":
+      return tailwind;
+    case "typescript":
+      return typescript;
+    case "vitejs":
+      return vitejs;
+    case "reactnative":
+      return reactnative;
     case "python":
       return python;
     case "c":
       return c;
     case "solidity":
       return solidity;
-    case "next js":
-      return nextJS;
-    case "react":
-      return react;
-    case "typescript":
-      return typescript;
     case "expressjs":
       return expressjs;
-    case "native":
-      return reactnative;
-    case "mongodb":
-      return mongoDB;
     case "pinecone":
       return pinecone;
-    case "mysql":
-      return mysql;
-    case "php":
-      return php;
-    case "tailwind":
-      return tailwind;
-    case "vitejs":
-      return vitejs;
-    case "aws":
-      return aws;
-    case "firebase":
-      return firebase;
-    case "git":
-      return git;
-    case "materialui":
-      return materialui;
-    case "openai":
-      return openai;
-    case "figma":
-      return figma;
-    case "markdown":
-      return markdown;
     default:
-      break;
+      return undefined;
   }
 };
