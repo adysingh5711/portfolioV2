@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
-import { skillsData } from "@/data/skills.js";
+import skillsData from "@/data/skills.js";
 import MagicButton from "../MagicButton";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
