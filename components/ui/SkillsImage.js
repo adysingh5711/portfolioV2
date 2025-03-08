@@ -22,6 +22,7 @@ import python from "/public/python.svg";
 import c from "/public/C.png";
 import solidity from "/public/Solidity.svg";
 import expressjs from "/public/expressjs.svg";
+import pinecone from "/public/pinecone.svg";
 
 export const skillsImage = (skill) => {
   const skillID = skill?.toLowerCase();
@@ -52,6 +53,8 @@ export const skillsImage = (skill) => {
       return reactnative;
     case "mongodb":
       return mongoDB;
+    case "pinecone":
+      return pinecone;
     case "mysql":
       return mysql;
     case "php":

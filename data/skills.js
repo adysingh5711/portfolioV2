@@ -20,4 +20,5 @@ export const skillsData = [
   "OpenAI",
   "MongoDB",
   "markdown",
+  "Pinecone",
 ];

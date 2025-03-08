@@ -33,8 +33,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Currently Mastering",
+    description: "I constantly try to improve myself",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -43,7 +43,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Tech enthusiast with a passion for building cool stuff.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -54,7 +54,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building Neuafind.ai",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -85,6 +85,7 @@ export const projects = [
       "/ts.svg",
       "/tailwind.svg",
       "openai.svg",
+      "/pinecone.svg",
       "/git.svg",
     ],
     hoverText: "NeuraFind.ai",
@@ -100,18 +101,19 @@ export const projects = [
       "/next.svg",
       "/ts.svg",
       "/tailwind.svg",
+      "/jest-js.svg",
       "/git.svg",
     ],
     hoverText: "Lichess Review",
     link: "https://lichess-review.vercel.app/",
     codeLink: "https://github.com/adysingh5711/LichessYearInReview"
   },
-    {
+  {
     id: 3,
     title: "Portfolio",
     des: "Created a modern Portfolio website with smooth animations and cleaner UI.",
     img: "/PortfolioV2.png",
-        iconLists: [
+    iconLists: [
       "/next.svg",
       "/ts.svg",
       "/tailwind.svg",
@@ -128,8 +130,8 @@ export const projects = [
     img: "/BrainIQ.png",
     iconLists: [
       "/vitejs.svg",
-      "/materialui.svg",
       "/javascript.svg",
+      "/materialui.svg",
       "/mongoDB.svg",
       "/git.svg",
     ],
@@ -142,7 +144,7 @@ export const projects = [
     title: "Emotion Inference",
     des: "Created a website to monitor the realtime data from the Street Lights and implemented the security system.",
     img: "/EmotionInference.png",
-    iconLists: ["/html.svg", "/css.svg", "/javascript.svg","/git.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/javascript.svg", "/git.svg"],
     hoverText: "Emotion Inference",
     link: "https://adysingh5711.github.io/Smart-Lightings-Trinetra/index.html",
     codeLink: "https://github.com/adysingh5711/Smart-Lightings-Trinetra"
