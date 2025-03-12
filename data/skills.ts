@@ -4,7 +4,7 @@ const skillsData: string[] = [
   "Javascript",
   "Typescript",
   "React",
-  "Next JS",
+  "nextjs",
   "python",
   "c",
   "solidity",
