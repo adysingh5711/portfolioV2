@@ -5,6 +5,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { socialMedia } from "@/data";
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -57,8 +58,12 @@ const Hero = () => {
             Hi! I&apos;m Aditya, a Fullstack Developer based in India.
           </p>
 
-
-          <a href="https://drive.google.com/file/d/1wrlb8fvME2ddpZZ7TG_-cmm13sOLOP6i/view?usp=sharing" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/16bJ2EKg-u_znDtx6pDTVQMCbD74pLqgE/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Aditya's Resume"
+          >
             <MagicButton
               title="My Resume"
               icon={<FaLocationArrow />}
@@ -72,8 +77,10 @@ const Hero = () => {
                 className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
                 href={info?.url}
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Aditya's LinkedIn"
               >
-                <img src={info?.img} alt="icons" width={20} height={20} />
+                <Image src={info?.img} alt="icons" width={20} height={20} />
               </Link>
             ))}
           </div>

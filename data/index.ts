@@ -77,54 +77,97 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "Spylt",
+    des: "Award-worthy interactive landing page with advanced animations and 60fps performance",
+    img: "/spylt.png",
+    iconLists: [
+      "/vitejs.svg",
+      "/react.svg",
+      "/javascript.svg",
+      "/tailwind.svg",
+      "/gsap-white.svg",
+    ],
+    hoverText: "Spylt",
+    link: "https://spylt-premium.vercel.app/",
+    codeLink: "https://github.com/adysingh5711/spylt-premium",
+  },
+  {
+    id: 2,
+    title: "Kattal-ai",
+    des: "Enterprise-grade AI document chat system using Retrieval Augmented Generation (RAG), serving 1000+ concurrent users ",
+    img: "/kattal-ai.png",
+    iconLists: [
+      "/next.svg",
+      "/react.svg",
+      "/ts.svg",
+      "/tailwind.svg",
+      "openai.svg",
+      "/pinecone.svg",
+      "/supabase.svg",
+      "/aws.svg",
+    ],
+    hoverText: "Kattal-ai",
+    link: "https://kattal-ai.vercel.app/",
+    codeLink: "https://github.com/adysingh5711/kattal-ai",
+  },
+  {
+    id: 3,
+    title: "SHEILD",
+    des: "A comprehensive emergency response system with real-time location tracking, SOS functionality, and intelligent route planning using H3 spatial indexing.",
+    img: "/sheild.png",
+    iconLists: [
+      "/next.svg",
+      "/react.svg",
+      "/ts.svg",
+      "/tailwind.svg",
+      "firebase.svg",
+      "/capacitor.svg",
+    ],
+    hoverText: "NeuraFind.ai",
+    link: "https://sheild-tau.vercel.app/",
+    codeLink: "https://github.com/DevanshVarshney/SHEILD",
+  },
+  {
+    id: 4,
     title: "NeuraFind.ai",
     des: "AI-powered product selection that helps users search and receive recommendations based on their needs",
     img: "/neurafindai.png",
     iconLists: [
       "/next.svg",
+      "/react.svg",
       "/ts.svg",
       "/tailwind.svg",
       "openai.svg",
       "/pinecone.svg",
-      "/git.svg",
+      "/supabase.svg",
+      "/firebase.svg",
     ],
     hoverText: "NeuraFind.ai",
     link: "https://neurafind-ai.vercel.app/",
     codeLink: "https://github.com/adysingh5711/neurafind.ai_Frontend",
   },
   {
-    id: 2,
+    id: 5,
     title: "Lichess Review",
     des: "A production-ready, full-stack Lichess analysis tool with real-time data processing and performance review",
     img: "/lyir.png",
-    iconLists: [
-      "/next.svg",
-      "/ts.svg",
-      "/tailwind.svg",
-      "/jest-js.svg",
-      "/git.svg",
-    ],
+    iconLists: ["/next.svg", "/ts.svg", "/tailwind.svg", "/jest-js.svg"],
     hoverText: "Lichess Review",
     link: "https://lichess-review.vercel.app/",
-    codeLink: "https://github.com/adysingh5711/LichessYearInReview"
+    codeLink: "https://github.com/adysingh5711/LichessYearInReview",
   },
   {
-    id: 3,
+    id: 6,
     title: "Portfolio",
     des: "Created a modern Portfolio website with smooth animations and cleaner UI.",
     img: "/PortfolioV2.png",
-    iconLists: [
-      "/next.svg",
-      "/ts.svg",
-      "/tailwind.svg",
-      "/git.svg",
-    ],
+    iconLists: ["/next.svg", "/ts.svg", "/tailwind.svg", "/git.svg"],
     hoverText: "Portfolio",
     link: "https://0xaditya.xyz/",
-    codeLink: "https://github.com/adysingh5711/portfolioV2"
+    codeLink: "https://github.com/adysingh5711/portfolioV2",
   },
   {
-    id: 4,
+    id: 7,
     title: "BrainIQ",
     des: "BrainIQ is an innovative platform offering seamless, accessible learning and quality education for all",
     img: "/BrainIQ.png",
@@ -133,23 +176,21 @@ export const projects = [
       "/javascript.svg",
       "/materialui.svg",
       "/mongoDB.svg",
-      "/git.svg",
     ],
     hoverText: "BrainIQ",
     link: "https://adysingh5711.github.io/BrainIQ/",
-    codeLink: "https://github.com/adysingh5711/BrainIQ"
+    codeLink: "https://github.com/adysingh5711/BrainIQ",
   },
   {
-    id: 5,
+    id: 8,
     title: "Emotion Inference",
     des: "Created a website to monitor the realtime data from the Street Lights and implemented the security system.",
     img: "/EmotionInference.png",
-    iconLists: ["/html.svg", "/css.svg", "/javascript.svg", "/git.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/javascript.svg"],
     hoverText: "Emotion Inference",
     link: "https://adysingh5711.github.io/Smart-Lightings-Trinetra/index.html",
-    codeLink: "https://github.com/adysingh5711/Smart-Lightings-Trinetra"
+    codeLink: "https://github.com/adysingh5711/Smart-Lightings-Trinetra",
   },
-
 ];
 
 export const testimonials = [
@@ -206,18 +247,30 @@ export const education = [
 export const workExperience = [
   {
     id: 1,
+    title: "Full-Stack Developer",
+    desc: `<ul class="list-disc list-inside space-y-2">
+      <li>Architected and deployed an AI-powered document chat app with Next.js & TypeScript, scaling to 1000+ concurrent users</li>
+      <li>Engineered responsive UI with advanced state management, real-time updates, and seamless API integration for sub-second responses and 40% UX improvement.</li>
+      <li>Delivered full-stack solution with optimized PostgreSQL backend, ensuring performance, scalability, and reliability.</li>`,
+    className: "md:col-span-2",
+    duration: "July 2025 - Sept 2025",
+    companyName: "Kattakada City Administration",
+    logo: "developer",
+  },
+  {
+    id: 2,
     title: "Tech Team Member",
     desc: `<ul class="list-disc list-inside space-y-2">
       <li>Working collaboratively within a team to develop and maintain the webbsite of the organisation</li>
       <li>Designed and implemented a customized Next.js project structure with an integrated Tailwind setup, resulting in a 30% reduction in development time and a measurable improvement in code quality</li>
       <li>Engineered responsive templates and components, prioritizing SEO and accessibility contributing to a significant increase in client's online revenue</li>`,
     className: "md:col-span-2",
-    duration: "August 2023 - present",
+    duration: "August 2023 - June 2024",
     companyName: "IIITians Network",
     logo: "iiitiansnetwork",
   },
   {
-    id: 2,
+    id: 3,
     title: "Contributor",
     desc: `<ul class="list-disc list-inside space-y-2">
       <li>Engineered a robust component-based architecture using ReactJS for a web app tailored to the banking sector</li>

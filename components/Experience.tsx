@@ -38,7 +38,7 @@ const Experience = () => {
                 icon={
                   <Image
                     src={companyImage(item?.logo)?.src || ""}
-                    alt="IIITians Network"
+                    alt={item?.companyName || "Company"}
                     style={{
                       borderRadius: "50%",
                     }}
@@ -51,18 +51,16 @@ const Experience = () => {
               >
                 <GlowCard key={index} identifier={`experience-${item?.id}`}>
                   <div className="p-3 relative text-white">
-                    <div className="flex justify-center">
-                      <p className="text-xs sm:text-sm text-green">
-                        {item?.duration}
-                      </p>
-                    </div>
                     <div className="flex items-center gap-x-8 px-3 py-5">
                       <div className="hidden lg:block text-violet-500  transition-all duration-300 hover:scale-125">
                         <BsPersonWorkspace size={36} />
                       </div>
-                      <div>
-                        <div className="text-base sm:text-xl mb-2 font-medium uppercase">
+                      <div className="flex-1">
+                        <div className="text-base sm:text-xl mb-2 font-medium uppercase text-green">
                           {item?.title}
+                        </div>
+                        <div className="text-sm sm:text-base mb-3 text-purple font-medium">
+                          {item?.companyName}
                         </div>
                         <div
                           className="text-sm sm:text-base"
